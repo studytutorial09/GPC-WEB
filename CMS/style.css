@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #41444f;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar .list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .list li {
+    padding: 10px 20px;
+}
+
+.navbar .list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar {
+    background-color: #43484d;
+    color: white;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 250px;
+    height: calc(100% - 50px);
+    overflow-y: auto;
+    padding-top: 40px;
+}
+
+.sidebar .text {
+    color: white;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    background-color: #495057;
+    display: block;
+}
+
+.content {
+    margin-left: 260px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 50px);
+    overflow-y: auto;
+    padding-top: 110px;
+    padding-bottom: 60px; 
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+img.sha {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 70px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0;
+        padding-top: 120px;
+    }
+}
+
+/* Info Boxes */
+.info-box {
+    display: flex;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 10px;
+    align-items: center;
+  }
+  
+  .info-box-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: white;
+  }
+  
+  .info-box-content {
+    flex: 1;
+  }
+  
+  .info-box-text {
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  .info-box-number {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Color Classes */
+  .bg-info {
+    background-color: #17a2b8 !important;
+  }
+  
+  .bg-danger {
+    background-color: #dc3545 !important;
+  }
+  
+  .bg-warning {
+    background-color: #ffc107 !important;
+  }
+  
+  /* Elevation Classes */
+  .elevation-1 {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+/* staff card */
+.card img {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	margin: 20px auto;
+}
+.card-body {
+	text-align: center;
+}
+  
+  
